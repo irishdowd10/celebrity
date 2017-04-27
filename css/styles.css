@@ -1,19 +1,35 @@
+body {
+  background-color: #c0ced8;
+}
+
+h1, h2, p {
+  font-family: 'Share Tech Mono', monospace;
+;
+  text-align: center;
+}
+
 img {
   width: 400px;
 }
 
-#servo, #crow, #gypsy, #no-robots {
-  display: none;
-}
 
 label {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
+
 }
 
-h1, h2 {
-  font-family: 'Oswald', sans-serif;
+span {
+  font-weight: bolder;
 }
 
-p {
-  line-height: 20px;
+.answers {
+  text-align: center;
+}
+
+.container {
+  border: 2px solid black;
+}
+
+#servo, #crow, #gypsy, #no-robots {
+  display: none;
 }

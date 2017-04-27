@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Which Robot Are You?</title>
@@ -11,43 +11,48 @@
 
   <body>
   <div class="container">
+    <div class="jumbotron">
     <h1>Which MST3K Robot Are You?</h1>
-    <h2>Make your choices below.</h2>
+      <h2>Make your choices below.</h2>
 
-    <div class="formOne">
-      <form id="determiningFactors">
-        <label for="gender">Gender:</label>
-          <select id="gender">
-            <option value="1">Female</option>
-            <option value="2">Male</option>
-            <option value="3">Robot</option>
-          </select>
-    <br><br>
-        <label for="color">Choose a color:</label>
-          <select id="color">
-            <option value="1">Blue</option>
-            <option value="2">Green</option>
-            <option value="3">Red</option>
-          </select>
-    <br><br>
-        <label for="planet">Favorite planet</label>
-          <select id="planet">
-            <option value="1">Earth</option>
-            <option value="2">Saturn</option>
-            <option value="3">Pluto</option>
-          </select>
+      <div class="formOne">
+        <form id="determiningFactors">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <label for="gender">Gender:</label>
+            <select id="gender">
+              <option value="1">Female</option>
+              <option value="2">Male</option>
+              <option value="3">Robot</option>
+            </select>
+      <br><br>
+          <label for="color">Choose a color:</label>
+            <select id="color">
+              <option value="1">Blue</option>
+              <option value="2">Green</option>
+              <option value="3">Red</option>
+            </select>
+      <br><br>
+          <label for="planet">Favorite planet</label>
+            <select id="planet">
+              <option value="1">Earth</option>
+              <option value="2">Saturn</option>
+              <option value="3">Pluto</option>
+            </select>
 
-        <p> <button type="submit" class="btn">Calculating...</button> </p>
-      </form>
+          <p> <button type="submit" class="btn">Calculating...</button> </p>
+        </form>
+      </div>
     </div>
-
 
     <div class="answers">
         <div id="servo">
           <h2>You got Servo!</h2>
           <p>
             <img src="img/servo.jpg" alt="Servo" />
-            <br>Servo is you. You are Servo. Excellent.
+            <br>Servo is <span class="name"></span>. <span class="name"></span> is Servo. Excellent.
           </p>
         </div>
 
@@ -55,7 +60,7 @@
           <h2>You got Gypsy!</h2>
           <p>
             <img src="img/gypsy.jpg" alt="Gypsy" />
-            <br>Gypsy is amazing just like you.
+            <br>Gypsy is amazing just like <span class="name"></span>.
           </p>
 
         </div>
@@ -63,7 +68,7 @@
           <h2>You got Crow!</h2>
           <p>
             <img src="img/crow.jpg" alt="Crow" />
-            <br>Crow is so annoying but funny.
+            <br>Crow is so annoying but funny. Just like <span class="name"></span>.
           </p>
         </div>
 
@@ -71,7 +76,7 @@
           <h2>OMG you're Joel!</h2>
           <p>
             <img src="img/joel.jpg" alt="Robots" />
-            <br>I'm sorry, you're not a robot. You're just Joel.
+            <br>I'm sorry, <span class="name"></span>, you are not a robot. <span class="name"></span> is just a Joel.
           </p>
         </div>
 
