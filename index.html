@@ -6,42 +6,40 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Celebrity Robot Dating Site</title>
+    <title>Which Robot Are You?</title>
   </head>
 
   <body>
   <div class="container">
-    <h1>Celebrity Robot Dating Site</h1>
-    <h2>Which robot will date you?</h2>
+    <h1>Which MST3K Robot Are You?</h1>
+    <h2>Make your choices below.</h2>
 
     <div class="formOne">
-      <form id="personalInfo">
-        <div class="form-group">
-          <label for="Age">Age:</label>
-          <input id="age" type="text">
-        </div>
+      <form id="determiningFactors">
         <label for="gender">Gender:</label>
-        <select id="gender">
-          <option value="female">Female</option>
-          <option value="male">Male</option>
-          <option value="robot">Robot</option>
-        </select>
-        <br><br>
+          <select id="gender">
+            <option value="1">Female</option>
+            <option value="2">Male</option>
+            <option value="3">Robot</option>
+          </select>
+    <br><br>
         <label for="color">Choose a color:</label>
-        <select id="color">
-          <option value="blue">Blue</option>
-          <option value="green">Green</option>
-          <option value="red">Red</option>
-        </select>
+          <select id="color">
+            <option value="1">Blue</option>
+            <option value="2">Green</option>
+            <option value="3">Red</option>
+          </select>
+    <br><br>
+        <label for="planet">Favorite planet</label>
+          <select id="planet">
+            <option value="1">Earth</option>
+            <option value="2">Saturn</option>
+            <option value="3">Pluto</option>
+          </select>
 
-        <p> <button type="submit" class="btn">My robot is...</button> </p>
+        <p> <button type="submit" class="btn">Calculating...</button> </p>
       </form>
     </div>
-
-
-
-
-
 
 
     <div class="answers">
@@ -49,7 +47,7 @@
           <h2>You got Servo!</h2>
           <p>
             <img src="img/servo.jpg" alt="Servo" />
-            <br>Servo will love you forever and ever even after you die!
+            <br>Servo is you. You are Servo. Excellent.
           </p>
         </div>
 
@@ -57,7 +55,7 @@
           <h2>You got Gypsy!</h2>
           <p>
             <img src="img/gypsy.jpg" alt="Gypsy" />
-            <br>Gypsy will love you forever and ever even after you die!
+            <br>Gypsy is amazing just like you.
           </p>
 
         </div>
@@ -65,15 +63,15 @@
           <h2>You got Crow!</h2>
           <p>
             <img src="img/crow.jpg" alt="Crow" />
-            <br>Crow will love you forever and ever even after you die!
+            <br>Crow is so annoying but funny.
           </p>
         </div>
 
         <div id="no-robots">
-          <h2>You're too young!</h2>
+          <h2>OMG you're Joel!</h2>
           <p>
-            <img src="img/header.png" alt="Robots" />
-            <br>Robots are not parents.
+            <img src="img/joel.jpg" alt="Robots" />
+            <br>I'm sorry, you're not a robot. You're just Joel.
           </p>
         </div>
 
